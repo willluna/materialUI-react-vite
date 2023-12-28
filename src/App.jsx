@@ -1,28 +1,42 @@
-import { Button, Container, Typography} from  "@mui/material"
-import  AgricultureIcon  from "@mui/icons-material/Agriculture";
-import AirIcon from "@mui/icons-material/Air";
+import { Container, Grid } from  "@mui/material"
 
 
 
 export default function App() {
     return(
       <Container>
-      <h1>App</h1>
-      <Typography variant="h3" color="primary">H3 titulo</Typography>
-      <Button 
-      variant="outlined"
-      color="error"
-      startIcon={<AgricultureIcon/>}
-    >
-      Botón chulisimo
-    </Button>
-      <Button 
-      variant="contained" 
-      color="success"
-      endIcon={<AirIcon/>}
-      >
-      Botón chulisimo
-      </Button>
+        <Grid container spacing={5}>
+          <Grid
+            item 
+            xs={12}
+            sm={6}
+            md={4}
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse illum quia sed, eum necessitatibus ipsa. Aperiam exercitationem recusandae quis dicta aliquid incidunt aliquam numquam eum rerum molestias, vel voluptatem!
+            </p>
+          </Grid>
+          <Grid 
+            item 
+            xs={12}
+            sm={6}
+            md={4}
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse illum quia sed, eum necessitatibus ipsa. Aperiam exercitationem recusandae quis dicta aliquid incidunt aliquam numquam eum rerum molestias, vel voluptatem!
+            </p>
+          </Grid>
+          <Grid 
+            item 
+            xs={12}
+            sm={12}
+            md={4}
+          >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse illum quia sed, eum necessitatibus ipsa. Aperiam exercitationem recusandae quis dicta aliquid incidunt aliquam numquam eum rerum molestias, vel voluptatem!
+            </p>
+          </Grid>
+        </Grid>
       </Container>
     );
 }
